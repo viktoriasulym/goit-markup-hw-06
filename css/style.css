@@ -642,13 +642,13 @@ button {
 
 .footer-form {
   display: flex;
+  gap: 12px;
 }
 
 .footer-input {
   width: 358px;
   height: 50px;
   padding-left: 16px;
-  margin-right: 12px;
 
   color: var(--second-title-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -674,8 +674,6 @@ button {
 }
 
 .footer-subscribe {
-  display: flex;
-  flex-direction: column;
   margin-left: auto;
 }
 
@@ -711,15 +709,12 @@ button {
 }
 
 .modal {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms linear;
-
+  padding: 40px;
   width: 528px;
   height: 581px;
   background-color: var(--second-title-color);
@@ -760,13 +755,11 @@ button {
 }
 
 .modal-title {
-  margin: auto;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-
   color: var(--title-color);
 }
 
@@ -823,7 +816,7 @@ button {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
-  outline: transparent; 
+  outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-text:focus,
